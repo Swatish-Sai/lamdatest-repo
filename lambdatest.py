@@ -238,7 +238,7 @@ class FirstSampleTest(unittest.TestCase):
             alert.send_keys("Hello!")
             alert.accept()
 
-            assert "You entered: a" in self.helper.get_result_text(), "Wrong result for prompt keys"
+            assert "You entered: Hello!" in self.helper.get_result_text(), "Wrong result for prompt keys"
 
             driver.execute_script('console.log("Validated JS Prompt")')
 
